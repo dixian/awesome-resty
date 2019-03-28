@@ -216,11 +216,12 @@ Core Libraries are bundled in OpenResty package, and you don't need to separatel
 * [zLua](https://github.com/mrxx/zLua) — A Codeigniter like Lua framework based on OpenResty
 * [lua-resty-stack](https://github.com/antonheryanto/lua-resty-stack) — OpenResty Simple Application Stack
 * [dodolu](https://github.com/zhangf911/dodolu) — A lightweight web framework based on OpenResty
-* [Octopus](https://github.com/cyberz-eu/octopus) ([Github](https://github.com/cyberz-eu/octopus)) — The Lua Web Platform
+* [Octopus](https://github.com/cyberz-eu/octopus) — The Lua Web Platform
 * [vicky](https://github.com/RocksonZeta/vicky) — A restful framework for openresty,inspired by expressjs and koa.
 
 #### Web Development Essentials
 
+* [lua-resty-url](https://github.com/3scale/lua-resty-url) — URL parser for OpenResty
 * [lua-resty-cookie](https://github.com/cloudflare/lua-resty-cookie) — Lua library for HTTP cookie manipulations for OpenResty/ngx_lua
 * [lua-resty-cors](https://github.com/detailyang/lua-resty-cors) — The Cross-Origin Resource Sharing (CORS) implementation for OpenResty
 * [lua-resty-session](https://github.com/bungle/lua-resty-session) — Session library for OpenResty implementing Secure Cookie Protocol
@@ -248,6 +249,9 @@ Core Libraries are bundled in OpenResty package, and you don't need to separatel
 * [Kong](https://getkong.org/) ([GitHub](https://github.com/Kong/kong)) — KONG: Microservice Management Layer (Secure, Manage & Extend your APIs and Microservices)
 * [LSSO](https://github.com/maiome-development/lsso) — A Lightweight SSO middleware for Nginx + Lua
 * [apigateway](https://github.com/adobe-apiplatform/apigateway) — A Performant API Gateway based on Nginx and OpenResty
+* [3scale APIcast](https://github.com/3scale/apicast) — API gateway module of Red Hat 3scale API Management
+* [Sumory Orange](https://github.com/sumory/orange) — API Gateway
+* [Monarch API Gateway](https://github.com/monarchapis/gateway-openresty)  — OpenResty-based API Gateway
 
 #### Templating
 
@@ -267,6 +271,7 @@ Core Libraries are bundled in OpenResty package, and you don't need to separatel
 
 * [lua-resty-macaroons](https://github.com/bungle/lua-resty-macaroons) — LuaJIT FFI Bindings to libmacaroons – Macaroons are flexible authorization credentials that support decentralized delegation, attenuation, and verification
 * [lua-resty-openidc](https://github.com/pingidentity/lua-resty-openidc) — lua-resty-openidc is a library for NGINX implementing the OpenID Connect Relying Party (RP) and the OAuth 2.0 Resource Server (RS) functionality
+* [lua-resty-duo-mobile](https://github.com/p0pr0ck5/lua-resty-duo-mobile) — OpenResty client for the Duo Mobile Auth API
 * [micro-auth](https://github.com/hypebeast/micro-auth) — A microservice that makes adding authentication with Google and Github to your application easy (Note: before using it in production, see: https://news.ycombinator.com/item?id=13682682 — hopefully we can remove this remark in a future)
 
 #### Cryptography
@@ -277,17 +282,19 @@ Core Libraries are bundled in OpenResty package, and you don't need to separatel
 * [lua-resty-jump-consistent-hash](https://github.com/ruoshan/lua-resty-jump-consistent-hash) — Jump Consistent Hash for LuaJIT
 * [lua-resty-letsencrypt](https://github.com/torhve/lua-resty-letsencrypt) — Automatically fetch and renew TLS certificates on the fly using LetsEncrypt CA.
 * [lua-resty-auto-ssl](https://github.com/GUI/lua-resty-auto-ssl) — On the fly (and free) SSL registration and renewal inside OpenResty/nginx with Let's Encrypt
+* [lua-resty-peter_sslers](https://github.com/aptise/lua-resty-peter_sslers) — Automaticly loads/cache SSL certificates based on SNI from caches or backend json servers
 * [lua-resty-murmurhash2](https://github.com/bungle/lua-resty-murmurhash2) — LuaJIT MurmurHash 2 bindings to Nginx / OpenResty murmurhash2 implementation
 * [lua-resty-hmac](https://github.com/jamesmarlowe/lua-resty-hmac) — Lua driver for making and receiving hmac signed requests
 * [lua-resty-scrypt](https://github.com/bungle/lua-resty-scrypt) — LuaJIT FFI-based scrypt library for OpenResty
 * [lua-resty-xxhash](https://github.com/bungle/lua-resty-xxhash) — LuaJIT FFI-bindings to xxHash, an Extremely fast non-cryptographic hash algorithm
-* [lua-resty-rsa](https://github.com/doujiang24/lua-resty-rsa) — RSA functions for LuaJIT
+* [lua-resty-rsa](https://github.com/spacewander/lua-resty-rsa) — RSA functions for LuaJIT
 * [lua-resty-aead](https://github.com/tmthrgd/lua-resty-aead) — AEAD cipher library for lua-nginx-module. BoringSSL only.
 * [lua-resty-hawk](https://github.com/golgote/lua-resty-hawk) — Hawk authentication on Nginx with Lua and OpenResty
 * [lua-resty-urandom](https://github.com/p0pr0ck5/lua-resty-urandom) — Buffered wrapper for Linux/BSD kernel space CSPRNG
 * [lua-resty-fastpbkdf2](https://github.com/mynameiscfed/lua-resty-fastpbkdf2) — Lua bindings to fastpbkdf2
 * [lua-argon2-ffi](https://github.com/thibaultCha/lua-argon2-ffi) — LuaJIT FFI binding for the Argon2 password hashing algorithm
 * [lua-resty-des](https://github.com/lilien1010/lua-resty-des) — Lua interface to make DES ECB encryption
+* [WXBizMsgCrypt](https://github.com/TheNorthMemory/WXBizMsgCrypt) — Lua version of the WeChat Message Cryptography
 
 #### Networking
 
@@ -298,6 +305,7 @@ Core Libraries are bundled in OpenResty package, and you don't need to separatel
 * [lua-resty-httpipe](https://github.com/timebug/lua-resty-httpipe) — Lua HTTP client cosocket driver for OpenResty / ngx_lua
 * [lua-resty-httpclient](https://github.com/oneoo/lua-resty-httpclient) — Nonblocking Lua HTTP Client library for aLiLua & ngx_lua
 * [lua-httpcli-resty](https://github.com/mah0x211/lua-httpcli-resty) — Lua HTTP client module for OpenResty
+* [lua-resty-requests](https://github.com/tokers/lua-resty-requests) — Yet Another HTTP Library for OpenResty
 * [lua-resty-websocket](https://github.com/openresty/lua-resty-websocket) — Lua WebSocket implementation for the ngx_lua module
 * [lua-resty-mediador](https://github.com/Kong/lua-resty-mediador) — Determines address of proxied request and does IP address / CIDR blocks handling (both IPv4 and IPv6)
 * [lua-resty-iputils](https://github.com/hamishforbes/lua-resty-iputils) — Utility functions for working with IP addresses in OpenResty
@@ -317,10 +325,16 @@ Core Libraries are bundled in OpenResty package, and you don't need to separatel
 * [lua-resty-tornera](https://github.com/pinge/lua-resty-tornera) — A traffic replay tool with an easy to use HTTP API for OpenResty / LuaJIT
 * [lua-resty-consul](https://github.com/hamishforbes/lua-resty-consul) — Library to interface with the consul HTTP API from ngx_lua
 * [lua-resty-healthcheck](https://github.com/Kong/lua-resty-healthcheck) — Healthcheck library for OpenResty to validate upstream service status
+* [lua-resty-balancer](https://github.com/openresty/lua-resty-balancer) — A generic consistent hash implementation for OpenResty
+* [lua-resty-sniproxy](https://github.com/fffonion/lua-resty-sniproxy) — SNI Proxy based on stream-lua-nginx-module
+* [lua-resty-multiplexer](https://github.com/fffonion/lua-resty-multiplexer) — Transparent port service multiplexer for stream subsystem
+* [lua-resty-http2](https://github.com/tokers/lua-resty-http2) — The HTTP/2 Protocol (Client Side) Implementation for OpenResty
 
 #### Databases and Storages
 
 * [lua-resty-mysql](https://github.com/openresty/lua-resty-mysql) — Non-blocking Lua MySQL client driver for ngx_lua based on the cosocket API
+* [lua-resty-mysql-connector](https://github.com/myselfghost/lua-resty-mysql-connector) — 
+Connection utilities for lua-resty-mysql, support for read and write separation，support for instantiating different databases
 * [lua-resty-postgres](https://github.com/azurewang/lua-resty-postgres) — Nonblocking Lua PostgreSQL driver library for ngx_lua
 * [pgmoon](https://github.com/leafo/pgmoon) — A pure Lua Postgres driver for use in OpenResy & more
 * [lua-resty-couchbase](https://github.com/ZigzagAK/lua-resty-couchbase) — OpenResty CouchBase module
@@ -332,6 +346,7 @@ Core Libraries are bundled in OpenResty package, and you don't need to separatel
 * [lua-resty-redis-connector](https://github.com/pintsized/lua-resty-redis-connector) — Connection utilities for lua-resty-redis, making it easy and reliable to connect to Redis hosts, either directly or via Redis Sentinel
 * [resty-redis-cluster](https://github.com/steve0511/resty-redis-cluster) — OpenResty Redis cluster-aware client based on resty-redis-cluster
 * [lua-resty-redis-cluster](https://github.com/cuiweixie/lua-resty-redis-cluster) — OpenResty Redis Cluster Client
+* [lua-resty-redis-util](https://github.com/anjia0532/lua-resty-redis-util) — Based on `lua-resty-redis` and makes it easier to operate the Redis
 * [lua-cassandra](https://github.com/thibaultCha/lua-cassandra) - Pure Lua, feature-rich, and cluster-aware Cassandra client
 * [lua-resty-cassandra](https://github.com/jbochi/lua-resty-cassandra) — Pure Lua Cassandra client using CQL binary protocol
 * [lua-resty-bloomd](https://github.com/jie123108/lua-resty-bloomd) — A client library based on ngx_lua to interface with [bloomd servers](https://github.com/armon/bloomd)
@@ -341,8 +356,8 @@ Core Libraries are bundled in OpenResty package, and you don't need to separatel
 * [lua-resty-mongo](https://github.com/nightsailer/lua-resty-mongo) — Lua mongodb client driver for the ngx_lua based on the cosocket API
 * [lua-mongo](https://github.com/boyxuper/lua-mongo) — A simple Lua Mongo driver (a fork made to work with co-sockets)
 * [lua-resty-influx](https://github.com/p0pr0ck5/lua-resty-influx) — OpenResty client for InfluxDB
-* [lua-resty-kyototycoon](https://github.com/cloudflare/lua-resty-kyototycoon) — Lua client driver for KyotoTycoon using its native wire protocol (OpenResty/ngx_lua)
-* [lua-resty-kyototycoon](https://github.com/sjnam/lua-resty-kyototycoon) — Lua client driver for KyotoTycoon using its binary protocol
+* [lua-resty-kyototycoon](https://github.com/cloudflare/lua-resty-kyototycoon) by [@cloudflare](https://github.com/cloudflare/) — Lua client driver for KyotoTycoon using its native wire protocol (OpenResty/ngx_lua)
+* [lua-resty-kyototycoon](https://github.com/sjnam/lua-resty-kyototycoon) by [@sjnam](https://github.com/sjnam/) — Lua client driver for KyotoTycoon using its binary protocol
 * [lua-resty-tarantool](https://github.com/perusio/lua-resty-tarantool) — Library for working with Tarantool from Nginx with the embedded Lua module or with OpeRresty
 * [lua-nginx-tarantool](https://github.com/ziontab/lua-nginx-tarantool) — A driver for a NoSQL database in a Lua script Tarantool build on fast nginx cosockets
 * [lua-resty-ssdb](https://github.com/LazyZhu/lua-resty-ssdb) — Lua ssdb client driver for the ngx_lua based on the cosocket API, SSDB is a leveldb server
@@ -387,15 +402,20 @@ Core Libraries are bundled in OpenResty package, and you don't need to separatel
 * [lua-resty-exec](https://github.com/jprjr/lua-resty-exec) — Non-blocking, non-shell-spawning, streaming and non-streaming subprocess library (using [sockexec](https://github.com/jprjr/sockexec))
 * [lua-resty-repl](https://github.com/saks/lua-resty-repl) — Interactive console (REPL) for OpenResty and LuaJIT code
 * [lua-resty-fileinfo](https://github.com/bungle/lua-resty-fileinfo) — LuaJIT FFI bindings to libmagic, magic number recognition library - tries to determine file types
-* [lua-resty-taglib](https://github.com/bungle/lua-resty-taglib) - LuaJIT FFI bindings for TagLib - An Audio Meta-Data Library
+* [lua-resty-base-encoding](https://github.com/spacewander/lua-resty-base-encoding) — Provides base32/base16/... encoding for OpenResty applications.
+* [lua-resty-mime-sniff](https://github.com/spacewander/lua-resty-mime-sniff) — Sniff the real MIME type of given data
+* [lua-resty-taglib](https://github.com/bungle/lua-resty-taglib) — LuaJIT FFI bindings for TagLib - An Audio Meta-Data Library
 * [lua-resty-uuid](https://github.com/bungle/lua-resty-uuid) — LuaJIT FFI bindings for libuuid, a DCE compatible Universally Unique Identifier library
 * [lua-resty-jit-uuid](https://github.com/thibaultCha/lua-resty-jit-uuid) — A pure LuaJIT (no dependencies) uuid generator tuned for performance
+* [lua-resty-unique-id](https://github.com/hqzxzb/lua-resty-unique-id) — 
+Lua library for generating a unique ID for OpenResty
 * [lua-resty-tsort](https://github.com/bungle/lua-resty-tsort) — Performs a topological sort on input data
 * [lua-resty-postal](https://github.com/bungle/lua-resty-postal) — LuaJIT FFI Bindings to libpostal – a fast statistical parser/normalizer for street addresses around the world.
 * [lua-resty-libinjection](https://github.com/p0pr0ck5/lua-resty-libinjection) — LuaJIT FFI bindings for libinjection, a SQL/SQLi tokenizer and analyzer
-* [lua-resty-socket](https://github.com/thibaultcha/lua-resty-socket) - Automatic LuaSocket/cosockets compatibility module
-* [Inspect](https://github.com/kikito/inspect.lua) ([Github](https://github.com/kikito/inspect.lua)) — Inspect is a library that transforms any Lua value into a human-readable representation. It is especially useful for debugging errors in tables.
-* [lua-resty-maxminddb](https://github.com/lilien1010/lua-resty-maxminddb) ([Github](https://github.com/lilien1010/lua-resty-maxminddb)) — LuaJIT FFI Bindings to official libmaxminddb, to get ip location with ip database offered by maxmind
+* [lua-resty-socket](https://github.com/thibaultcha/lua-resty-socket) — Automatic LuaSocket/cosockets compatibility module
+* [Inspect](https://github.com/kikito/inspect.lua) — Inspect is a library that transforms any Lua value into a human-readable representation. It is especially useful for debugging errors in tables.
+* [lua-resty-maxminddb](https://github.com/lilien1010/lua-resty-maxminddb) by [@lilien1010](https://github.com/lilien1010) — LuaJIT FFI Bindings to official libmaxminddb, to get ip location with ip database offered by maxmind
+* [lua-resty-maxminddb](https://github.com/anjia0532/lua-resty-maxminddb) by [@anjia0532](https://github.com/anjia0532) — A Lua library for reading MaxMind's Geolocation database format (aka mmdb or geoip2)
 
 #### Date and Time
 
@@ -416,7 +436,7 @@ These libraries are not build to using `lua-nginx-module`s date time functions (
 
 * [lua-resty-hoedown](https://github.com/bungle/lua-resty-hoedown) — LuaJIT FFI bindings to Hoedown, a standards compliant, fast, secure markdown processing library in C
 * [lua-gumbo](https://github.com/craigbarnes/lua-gumbo) — Lua bindings for the Gumbo HTML5 parsing library, with a set of DOM APIs implemented in pure Lua
-* [lua-resty-sass](https://github.com/bungle/lua-resty-sass) — LuaJIT FFI bindings for libsass - A C/C++ implementation of a Sass compiler (http://libsass.org/).
+* [lua-resty-sass](https://github.com/bungle/lua-resty-sass) — LuaJIT FFI bindings for libsass - A C/C++ implementation of a Sass compiler (http://libsass.org/)
 * [lua-resty-lanli](https://github.com/bungle/lua-resty-lanli) — LuaJIT FFI Bindings to Lanli HTML Sanitizer Library
 * [lua-resty-ini](https://github.com/doujiang24/lua-resty-ini) —  Lua INI-file parser
 * [lua-re2](https://github.com/cloudflare/lua-re2) — C and Lua wrapper for RE2 regular expression library.
@@ -424,6 +444,7 @@ These libraries are not build to using `lua-nginx-module`s date time functions (
 * [lua-resty-json](https://github.com/cloudflare/lua-resty-json) — JSON library for Lua and C (decoder only).
 * [lua-resty-libcjson](https://github.com/bungle/lua-resty-libcjson) — LuaJIT FFI-based cJSON library for OpenResty
 * [lua-resty-prettycjson](https://github.com/bungle/lua-resty-prettycjson) — Lua cJSON Pretty Formatter
+* [lua-resty-jsonschema](https://github.com/tianchaijz/lua-resty-jsonschema) — https://github.com/tianchaijz/lua-resty-jsonschema
 * [lua-resty-utf8rewind](https://github.com/bungle/lua-resty-utf8rewind) — LuaJIT FFI bindings for utf8rewind - a system library written in C designed to extend the default string handling functions with support for UTF-8 encoded text
 * [lua-resty-unistring](https://github.com/bungle/lua-resty-unistring) — LuaJIT FFI bindings for GNU libunistring - A Unicode string manipulation lIbrary (https://www.gnu.org/software/libunistring/)
 * [lua-resty-htmlentities](https://github.com/detailyang/lua-resty-htmlentities) — Backport the entities to LuaJIT with the FFI binding as the entities to UTF-8 decoder
@@ -442,10 +463,12 @@ These libraries are not build to using `lua-nginx-module`s date time functions (
 
 #### Image Formats
 
+* [lua-resty-imagick](https://github.com/kwanhur/lua-resty-imagick) — Lua bindings to ImageMagick's MagicWand for LuaJIT using FFI
 * [Lua IMagick](https://github.com/isage/lua-imagick) — Lua Pure-C Bindings to ImageMagick
 * [magick](https://github.com/leafo/magick) — Lua Bindings to ImageMagick for LuaJIT using FFI
 * [giflib](https://github.com/leafo/giflib) — Lua bindings to GIFLIB for LuaJIT using FFI
 * [fi-luajit](https://github.com/nyfair/fi-luajit) — A LuaJIT interface to FreeImage
+* [lua-vips](https://github.com/jcupitt/lua-vips) — LuaJIT binding for libvips 
 
 #### Localization
 
@@ -454,6 +477,7 @@ These libraries are not build to using `lua-nginx-module`s date time functions (
 #### Caching
 
 * [lua-resty-lrucache](https://github.com/openresty/lua-resty-lrucache) — Lua-land LRU Cache based on LuaJIT FFI
+* [lua-resty-mlcache](https://github.com/thibaultcha/lua-resty-mlcache) — Modern and flexible multi-level caching using lua-resty-lrucache, shared dictionaries, and cache stampede protection.
 * [shcache](https://github.com/mtourne/ngx.shcache) — shcache is an attempt at using ngx.shared.DICT with a caching state machine layed on top
 * [lua-resty-tlc](https://github.com/hamishforbes/lua-resty-tlc) — Two Layer Cache implementation using lua-resty-lrucache and shared dictionaries.
 * [Ledge](https://github.com/pintsized/ledge) — A Lua application for OpenResty, providing HTTP cache functionality for Nginx, using Redis as a cache / metadata store
@@ -467,7 +491,6 @@ These libraries are not build to using `lua-nginx-module`s date time functions (
 #### Logging
 
 * [lua-resty-logger-socket](https://github.com/cloudflare/lua-resty-logger-socket) — Raw-socket-based Logger Library for Nginx (based on ngx_lua)
-* [raven-lua](https://github.com/cloudflare/raven-lua) — A small Lua interface to Sentry
 * [lua-nginx-logging](https://github.com/Lumate/lua-nginx-logging) — Logging utilities for Nginx written in Lua
 * [lua-resty-logger](https://github.com/kedyyan/lua-resty-logger) — Custom Logger Library for OpenResty
 * [lua-resty-rfc5424](https://github.com/detailyang/lua-resty-rfc5424) — An implementation of the RFC5424(syslog) in the OpenResty
@@ -499,7 +522,6 @@ These libraries are not build to using `lua-nginx-module`s date time functions (
 * [lua-resty-paypal](https://github.com/Chewbye/lua-resty-paypal) — Lua Paypal client using express checkout for OpenResty
 * [lua-resty-17monip](https://github.com/timebug/lua-resty-17monip) — 17MonIP parsing library for ngx_lua
 * [lua-resty-upyun](https://github.com/aCayF/lua-resty-upyun) — Upyun cloud-based platform
-* [lua-resty-newrelic](https://github.com/saks/lua-resty-newrelic) — New Relic bindings for a OpenResty / Lua
 * [lua-mailgun](https://github.com/leafo/lua-mailgun) — A Lua library for sending emails and interacting with the Mailgun API. Compatible with OpenResty via Lapis HTTP API, or any other Lua script via LuaSocket.
 * [lua-payments](https://github.com/leafo/lua-payments) — Bindings to various payment provider APIs for use in Lua (with OpenResty or anything that supports LuaSocket)
 
